@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans | Iron Fitness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Iron<span>Fitness</span></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('membership') }}">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title"><span>Choose Your Power</span></h2>
+        
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <h3>Starter</h3>
+                <div class="price">$29<span>/mo</span></div>
+                <ul class="features-list">
+                    <li>✓ Gym Access (8am - 8pm)</li>
+                    <li>✓ Cardio Zone</li>
+                    <li>✓ Locker Room</li>
+                    <li style="opacity: 0.5;">✗ No Guest Pass</li>
+                </ul>
+                <a href="#" class="btn" style="background: #fff; color: #000;">Select</a>
+            </div>
+
+            <div class="price-card featured">
+                <h3>Pro Athlete</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <ul class="features-list">
+                    <li>✓ <strong>24/7 Keycard Access</strong></li>
+                    <li>✓ Full Weight Room</li>
+                    <li>✓ Free Group Classes</li>
+                    <li>✓ 1 Guest Pass / Month</li>
+                </ul>
+                <a href="#" class="btn">Go Pro</a>
+            </div>
+
+            <div class="price-card">
+                <h3>Elite</h3>
+                <div class="price">$89<span>/mo</span></div>
+                <ul class="features-list">
+                    <li>✓ All Pro Benefits</li>
+                    <li>✓ Sauna & Spa Access</li>
+                    <li>✓ 2 Personal Training Sessions</li>
+                    <li>✓ Nutrition Plan</li>
+                </ul>
+                <a href="#" class="btn" style="background: #fff; color: #000;">Select</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Iron Fitness Systems. Designed for Excellence.</p>
+    </footer>
+
+</body>
+</html>

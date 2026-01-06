@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON FITNESS | Next Level Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Iron<span>Fitness</span></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('membership') }}">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>BUILD YOUR<br><span style="color:var(--primary-color)">DREAM PHYSIQUE</span></h1>
+        <p>Join the elite fitness community. World-class equipment, expert trainers, and zero excuses.</p>
+        <a href="{{ url_for('membership') }}" class="btn">Start Free Trial</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title"><span>Why We Rule</span></h2>
+        
+        <div class="features-grid">
+            {% for item in highlights %}
+            <div class="feature-card">
+                <h3>{{ item.icon }} {{ item.title }}</h3>
+                <p>{{ item.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Iron Fitness Systems. Designed for Excellence.</p>
+    </footer>
+
+</body>
+</html>

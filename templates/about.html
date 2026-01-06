@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Iron Fitness</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Iron<span>Fitness</span></div>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('membership') }}">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title"><span>Our Story</span></h2>
+
+        <div class="about-split">
+            <div class="about-text">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">More Than Just A Gym</h3>
+                <p>Founded in 2010, Iron Fitness started as a small garage gym with one goal: <strong>No Nonsense Training.</strong></p>
+                <br>
+                <p>We believe that fitness shouldn't be complicated. It requires dedication, grit, and the right environment. We provide the environment; you bring the grit.</p>
+                <br>
+                <a href="{{ url_for('membership') }}" class="btn">Join The Family</a>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1000&auto=format&fit=crop" alt="Gym Interior">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Iron Fitness Systems. Designed for Excellence.</p>
+    </footer>
+
+</body>
+</html>
